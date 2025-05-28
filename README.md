@@ -1,11 +1,11 @@
-# 🧠 AgentSmuggle: AI Agent Threat Catalog + Proof-of-Concepts
+# 🧠 AgentNull: AI Agent Threat Catalog + Proof-of-Concepts
 
 This repository contains a red team-oriented catalog of attack vectors targeting autonomous AI agents (e.g., MCP, LangGraph, AutoGPT) along with individual proof-of-concepts (PoCs) for each.
 
 ## 📘 Structure
 
-- `catalog/AgentSmuggle_Catalog.md` — Human-readable threat catalog
-- `catalog/AgentSmuggle_Catalog.json` — Structured version for SOC/SIEM ingestion
+- `catalog/AgentNull_Catalog.md` — Human-readable threat catalog
+- `catalog/AgentNull_Catalog.json` — Structured version for SOC/SIEM ingestion
 - `pocs/` — One directory per attack vector, each with its own README, code, and sample input/output
 
 ## ⚠️ Disclaimer
