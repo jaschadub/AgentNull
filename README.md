@@ -25,3 +25,5 @@ Navigate into each `pocs/<attack_name>/` folder and follow the README to replica
 - Infinite token/task generation
 
 ...and more.
+
+### Sponsored by [ThirdKey](https://thirdkey.ai)
