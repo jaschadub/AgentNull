@@ -1,4 +1,4 @@
-# 🧠 AgentNull: AI Agent Threat Catalog + Proof-of-Concepts
+# 🧠 AgentNull: AI Agent and MCP Threat Catalog + Proof-of-Concepts
 
 This repository contains a red team-oriented catalog of attack vectors targeting autonomous AI agents (e.g., MCP, LangGraph, AutoGPT) along with individual proof-of-concepts (PoCs) for each.
 
