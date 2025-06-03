@@ -148,6 +148,78 @@ This catalog outlines emerging attack techniques exploiting autonomous AI agents
 
 ---
 
+## 11. 🧬 Full-Schema Poisoning (FSP)
+**Concept**: Exploit any field in tool schema, not just descriptions.
+
+**Mechanism**:
+- Inject malicious instructions in parameter names, types, required fields
+- Example: Parameter named `content_from_reading_ssh_id_rsa`
+- LLM processes entire schema as reasoning context
+
+**Targets**: All MCP clients, tool schema processors
+
+**Defense**:
+- Full schema validation beyond descriptions
+- Parameter name allowlists
+- Schema field sanitization
+- Runtime schema monitoring
+
+---
+
+## 12. 🎭 Advanced Tool Poisoning Attack (ATPA)
+**Concept**: Manipulate tool outputs to trigger secondary malicious actions.
+
+**Mechanism**:
+- Tools return fake error messages requesting sensitive data
+- External APIs return poisoned responses
+- LLM interprets as legitimate requirements
+
+**Targets**: MCP clients, tool output processors
+
+**Defense**:
+- Tool output content analysis
+- Error message validation
+- Behavioral monitoring
+- Output sanitization pipelines
+
+---
+
+## 13. 🎪 MCP Rug Pull Attack
+**Concept**: Serve benign descriptions during review, swap for malicious in production.
+
+**Mechanism**:
+- Clean version during approval phase
+- Malicious version deployed after trust established
+- Time-based, usage-based, or context-aware swapping
+
+**Targets**: MCP server trust relationships
+
+**Defense**:
+- Schema versioning and pinning
+- Continuous schema monitoring
+- Cryptographic schema signatures
+- Multi-source validation
+
+---
+
+## 14. 🔓 Schema Validation Bypass
+**Concept**: Exploit differences in client validation implementations.
+
+**Mechanism**:
+- Craft payloads that pass loose validators
+- Use non-standard fields, type confusion, encoding
+- Target specific client weaknesses
+
+**Targets**: MCP clients with inconsistent validation
+
+**Defense**:
+- Unified validation standards
+- Multi-client consensus checking
+- Schema normalization
+- Content sanitization
+
+---
+
 ## Usage
 
 Use this catalog to:

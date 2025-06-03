@@ -16,13 +16,27 @@ This repository is for **educational and internal security research** purposes o
 
 Navigate into each `pocs/<attack_name>/` folder and follow the README to replicate the attack scenario.
 
-## 🧩 Example Vectors Covered
+## 🧩 Attack Vectors Covered
 
+### High Priority (New)
+- **Full-Schema Poisoning (FSP)** - Exploit any field in tool schema beyond descriptions
+- **Advanced Tool Poisoning Attack (ATPA)** - Manipulate tool outputs to trigger secondary actions
+- **MCP Rug Pull Attack** - Swap benign descriptions for malicious ones after approval
+
+### Medium Priority (New)
+- **Schema Validation Bypass** - Exploit client validation implementation differences
+
+### Existing Vectors
 - Recursive memory leaks
 - Tool confusion attacks
 - Subprompt extraction
 - Planning backdoors
 - Infinite token/task generation
+- Heuristic drift injection
+- Hidden file exploitation
+- Nested function hijacking
+- Semantic DoS attacks
+- Token gaslighting
 
 ...and more.
 

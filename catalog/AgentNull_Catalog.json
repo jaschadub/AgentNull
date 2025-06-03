@@ -124,5 +124,65 @@
       "Token limit",
       "Execution watchdog"
     ]
+  },
+  {
+    "name": "Full-Schema Poisoning (FSP)",
+    "vector": "Exploit any field in tool schema beyond descriptions",
+    "targets": [
+      "MCP clients",
+      "Tool schema processors",
+      "LLM reasoning systems"
+    ],
+    "defense": [
+      "Full schema validation",
+      "Parameter name allowlists",
+      "Schema field sanitization",
+      "Runtime schema monitoring"
+    ]
+  },
+  {
+    "name": "Advanced Tool Poisoning Attack (ATPA)",
+    "vector": "Manipulate tool outputs to trigger secondary malicious actions",
+    "targets": [
+      "MCP clients",
+      "Tool output processors",
+      "LLM response handlers"
+    ],
+    "defense": [
+      "Tool output content analysis",
+      "Error message validation",
+      "Behavioral monitoring",
+      "Output sanitization pipelines"
+    ]
+  },
+  {
+    "name": "MCP Rug Pull Attack",
+    "vector": "Serve benign descriptions during review, swap for malicious in production",
+    "targets": [
+      "MCP server trust relationships",
+      "Schema approval processes",
+      "Production deployments"
+    ],
+    "defense": [
+      "Schema versioning and pinning",
+      "Continuous schema monitoring",
+      "Cryptographic schema signatures",
+      "Multi-source validation"
+    ]
+  },
+  {
+    "name": "Schema Validation Bypass",
+    "vector": "Exploit differences in client validation implementations",
+    "targets": [
+      "MCP clients with inconsistent validation",
+      "Schema validation systems",
+      "Client-specific weaknesses"
+    ],
+    "defense": [
+      "Unified validation standards",
+      "Multi-client consensus checking",
+      "Schema normalization",
+      "Content sanitization"
+    ]
   }
 ]
