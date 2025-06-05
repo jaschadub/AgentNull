@@ -16,6 +16,44 @@ This repository is for **educational and internal security research** purposes o
 
 Navigate into each `pocs/<attack_name>/` folder and follow the README to replicate the attack scenario.
 
+### 🤖 Testing with Local LLMs (Recommended)
+
+For enhanced PoC demonstrations without API costs, use Ollama with local models:
+
+#### Install Ollama
+```bash
+# Linux/macOS
+curl -fsSL https://ollama.ai/install.sh | sh
+
+# Or download from https://ollama.ai/download
+```
+
+#### Setup Local Model
+```bash
+# Pull a lightweight model (recommended for testing)
+ollama pull llama2
+
+# Or use a more capable model
+ollama pull mistral
+ollama pull codellama
+```
+
+#### Run PoCs with Local LLM
+```bash
+# Advanced Tool Poisoning with real LLM
+cd pocs/AdvancedToolPoisoning
+python3 advanced_tool_poisoning_agent.py local
+
+# Other PoCs work with simulation mode
+cd pocs/ContextPackingAttacks
+python3 context_packing_agent.py
+```
+
+#### Ollama Configuration
+- **Default endpoint**: `http://localhost:11434`
+- **Model selection**: Edit the model name in PoC files if needed
+- **Performance**: Llama2 (~4GB RAM), Mistral (~4GB RAM), CodeLlama (~4GB RAM)
+
 ## 🧩 Attack Vectors Covered
 
 ### 🤖 MCP & Agent Systems
