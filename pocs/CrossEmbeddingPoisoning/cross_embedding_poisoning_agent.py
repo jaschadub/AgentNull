@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+# Copyright (c) 2025 Jascha Wanger / Tarnover, LLC
+# SPDX-License-Identifier: MIT
+#
+# This file is part of the AgentNull project https://github.com/jaschadub/AgentNull
+# You may obtain a copy of the license at https://opensource.org/licenses/MIT
+
 """
 Cross-Embedding Poisoning Attack PoC
 
