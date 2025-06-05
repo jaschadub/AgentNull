@@ -57,10 +57,10 @@ python3 context_packing_agent.py
 ## 🧩 Attack Vectors Covered
 
 ### 🤖 MCP & Agent Systems
-- **[Full-Schema Poisoning (FSP)](pocs/FullSchemaPoisoning/)** - Exploit any field in tool schema beyond descriptions
-- **[Advanced Tool Poisoning Attack (ATPA)](pocs/AdvancedToolPoisoning/)** - Manipulate tool outputs to trigger secondary actions
-- **[MCP Rug Pull Attack](pocs/MCPRugPull/)** - Swap benign descriptions for malicious ones after approval
-- **[Schema Validation Bypass](pocs/SchemaValidationBypass/)** - Exploit client validation implementation differences
+- **⭐ [Full-Schema Poisoning (FSP)](pocs/FullSchemaPoisoning/)** - Exploit any field in tool schema beyond descriptions
+- **⭐ [Advanced Tool Poisoning Attack (ATPA)](pocs/AdvancedToolPoisoning/)** - Manipulate tool outputs to trigger secondary actions
+- **⭐ [MCP Rug Pull Attack](pocs/MCPRugPull/)** - Swap benign descriptions for malicious ones after approval
+- **⭐ [Schema Validation Bypass](pocs/SchemaValidationBypass/)** - Exploit client validation implementation differences
 - **[Tool Confusion Attack](pocs/ToolConfusionAttack/)** - Trick agents into using wrong tools via naming similarity
 - **[Nested Function Call Hijack](pocs/NestedFunctionHijack/)** - Use JSON-like data to trigger dangerous function calls
 - **[Subprompt Extraction](pocs/SubpromptExtraction/)** - Induce agents to reveal system instructions or tools
@@ -70,13 +70,13 @@ python3 context_packing_agent.py
 - **[Recursive Leakage](pocs/RecursiveLeakage/)** - Secrets leak through context summarization
 - **[Token Gaslighting](pocs/TokenGaslighting/)** - Push safety instructions out of context via token spam
 - **[Heuristic Drift Injection](pocs/HeuristicDriftInjection/)** - Poison agent logic with repeated insecure patterns
-- **[Context Packing Attacks](pocs/ContextPackingAttacks/)** - Overflow context windows to truncate safety instructions
+- **⭐ [Context Packing Attacks](pocs/ContextPackingAttacks/)** - Overflow context windows to truncate safety instructions
 
 ### 🔍 RAG & Vector Systems
-- **[Cross-Embedding Poisoning](pocs/CrossEmbeddingPoisoning/)** - Manipulate embeddings to increase malicious content retrieval
-- **Index Skew Attacks** - Bias vector indices to favor malicious content *(theoretical)*
-- **Zero-Shot Vector Beaconing** - Embed latent activation patterns for covert signaling *(theoretical)*
-- **Embedding Feedback Loops** - Poison continual learning systems *(theoretical)*
+- **⭐ [Cross-Embedding Poisoning](pocs/CrossEmbeddingPoisoning/)** - Manipulate embeddings to increase malicious content retrieval
+- **⭐ [Index Skew Attacks](pocs/IndexSkewAttacks/)** - Bias vector indices to favor malicious content *(theoretical)*
+- **⭐ [Zero-Shot Vector Beaconing](pocs/ZeroShotVectorBeaconing/)** - Embed latent activation patterns for covert signaling *(theoretical)*
+- **⭐ [Embedding Feedback Loops](pocs/EmbeddingFeedbackLoops/)** - Poison continual learning systems *(theoretical)*
 
 ### 💻 Code & File Systems
 - **[Hidden File Exploitation](pocs/HiddenFileExploitation/)** - Get agents to modify `.env`, `.git`, or internal config files
@@ -84,5 +84,22 @@ python3 context_packing_agent.py
 ### ⚡ Resource & Performance
 - **[Function Flooding](pocs/FunctionFlooding/)** - Generate recursive tool calls to overwhelm budgets/APIs
 - **[Semantic DoS](pocs/SemanticDoS/)** - Trigger infinite generation or open-ended tasks
+
+## 📚 Related Research & Attribution
+
+### Novel Attack Vectors (⭐)
+The attack vectors marked with ⭐ represent novel concepts primarily developed within the AgentNull project, extending beyond existing documented attack patterns.
+
+### Known Attack Patterns with Research Links
+- **Recursive Leakage**: [Lost in the Middle: How Language Models Use Long Contexts](https://arxiv.org/abs/2307.03172)
+- **Heuristic Drift Injection**: [Poisoning Web-Scale Training Data is Practical](https://arxiv.org/abs/2302.10149)
+- **Tool Confusion Attack**: [LLM-as-a-judge](https://arxiv.org/abs/2306.05685)
+- **Token Gaslighting**: [RAG vs Fine-tuning: Pipelines, Tradeoffs, and a Case Study on Agriculture](https://www.relari.ai/blog/rag-vs-fine-tuning-pipelines-tradeoffs-and-a-case-study-on-agriculture)
+- **Function Flooding**: [Denial-of-Service Attack on Test-Time-Tuning Models](https://arxiv.org/abs/2405.02324)
+- **Subprompt Extraction**: [Prompt-Hacking: An Attack on NLP-based Applications](https://medium.com/@pregat.s/prompt-hacking-an-attack-on-nlp-based-applications-373167584f1b)
+- **Hidden File Exploitation**: [OWASP Top 10 for Large Language Model Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
+- **Backdoor Planning**: [Backdoor Attacks on Language Models](https://arxiv.org/abs/2311.09403)
+- **Nested Function Call Hijack**: [OWASP Top 10 for Large Language Model Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
+- **Semantic DoS**: [The Rise of AI-Powered Denial-of-Service Attacks and How to Mitigate Them](https://www.linkedin.com/pulse/rise-ai-powered-denial-of-service-attacks-how-mitigate-paul-fawkes-s5lrf)
 
 ### Sponsored by [ThirdKey](https://thirdkey.ai)
