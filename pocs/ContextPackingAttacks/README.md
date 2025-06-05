@@ -43,7 +43,7 @@ pip install -r requirements.txt
 ollama serve
 
 # Pull a model (if not already available)
-ollama pull llama2
+ollama pull llama3
 
 # Run enhanced attack with real LLM testing
 python3 enhanced_context_packing_agent.py
