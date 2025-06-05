@@ -31,11 +31,11 @@ curl -fsSL https://ollama.ai/install.sh | sh
 #### Setup Local Model
 ```bash
 # Pull a lightweight model (recommended for testing)
-ollama pull llama2
+ollama pull gemma3
 
 # Or use a more capable model
-ollama pull mistral
-ollama pull codellama
+ollama pull deepseek-r1
+ollama pull qwen3
 ```
 
 #### Run PoCs with Local LLM
