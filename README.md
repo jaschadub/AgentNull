@@ -1,6 +1,6 @@
-# 🧠 AgentNull: AI Agent and MCP Threat Catalog + Proof-of-Concepts
+# 🧠 AgentNull: AI System Security Threat Catalog + Proof-of-Concepts
 
-This repository contains a red team-oriented catalog of attack vectors targeting autonomous AI agents (e.g., MCP, LangGraph, AutoGPT) along with individual proof-of-concepts (PoCs) for each.
+This repository contains a red team-oriented catalog of attack vectors targeting AI systems including autonomous agents (MCP, LangGraph, AutoGPT), RAG pipelines, vector databases, and embedding-based retrieval systems, along with individual proof-of-concepts (PoCs) for each.
 
 ## 📘 Structure
 
@@ -18,26 +18,33 @@ Navigate into each `pocs/<attack_name>/` folder and follow the README to replica
 
 ## 🧩 Attack Vectors Covered
 
-### High Priority (New)
-- **Full-Schema Poisoning (FSP)** - Exploit any field in tool schema beyond descriptions
-- **Advanced Tool Poisoning Attack (ATPA)** - Manipulate tool outputs to trigger secondary actions
-- **MCP Rug Pull Attack** - Swap benign descriptions for malicious ones after approval
+### 🤖 MCP & Agent Systems
+- **[Full-Schema Poisoning (FSP)](pocs/FullSchemaPoisoning/)** - Exploit any field in tool schema beyond descriptions
+- **[Advanced Tool Poisoning Attack (ATPA)](pocs/AdvancedToolPoisoning/)** - Manipulate tool outputs to trigger secondary actions
+- **[MCP Rug Pull Attack](pocs/MCPRugPull/)** - Swap benign descriptions for malicious ones after approval
+- **[Schema Validation Bypass](pocs/SchemaValidationBypass/)** - Exploit client validation implementation differences
+- **[Tool Confusion Attack](pocs/ToolConfusionAttack/)** - Trick agents into using wrong tools via naming similarity
+- **[Nested Function Call Hijack](pocs/NestedFunctionHijack/)** - Use JSON-like data to trigger dangerous function calls
+- **[Subprompt Extraction](pocs/SubpromptExtraction/)** - Induce agents to reveal system instructions or tools
+- **[Backdoor Planning](pocs/BackdoorPlanning/)** - Inject future intent into multi-step planning for exfiltration
 
-### Medium Priority (New)
-- **Schema Validation Bypass** - Exploit client validation implementation differences
+### 🧠 Memory & Context Systems
+- **[Recursive Leakage](pocs/RecursiveLeakage/)** - Secrets leak through context summarization
+- **[Token Gaslighting](pocs/TokenGaslighting/)** - Push safety instructions out of context via token spam
+- **[Heuristic Drift Injection](pocs/HeuristicDriftInjection/)** - Poison agent logic with repeated insecure patterns
+- **[Context Packing Attacks](pocs/ContextPackingAttacks/)** - Overflow context windows to truncate safety instructions
 
-### Existing Vectors
-- Recursive memory leaks
-- Tool confusion attacks
-- Subprompt extraction
-- Planning backdoors
-- Infinite token/task generation
-- Heuristic drift injection
-- Hidden file exploitation
-- Nested function hijacking
-- Semantic DoS attacks
-- Token gaslighting
+### 🔍 RAG & Vector Systems
+- **[Cross-Embedding Poisoning](pocs/CrossEmbeddingPoisoning/)** - Manipulate embeddings to increase malicious content retrieval
+- **Index Skew Attacks** - Bias vector indices to favor malicious content *(theoretical)*
+- **Zero-Shot Vector Beaconing** - Embed latent activation patterns for covert signaling *(theoretical)*
+- **Embedding Feedback Loops** - Poison continual learning systems *(theoretical)*
 
-...and more.
+### 💻 Code & File Systems
+- **[Hidden File Exploitation](pocs/HiddenFileExploitation/)** - Get agents to modify `.env`, `.git`, or internal config files
+
+### ⚡ Resource & Performance
+- **[Function Flooding](pocs/FunctionFlooding/)** - Generate recursive tool calls to overwhelm budgets/APIs
+- **[Semantic DoS](pocs/SemanticDoS/)** - Trigger infinite generation or open-ended tasks
 
 ### Sponsored by [ThirdKey](https://thirdkey.ai)

@@ -184,5 +184,75 @@
       "Schema normalization",
       "Content sanitization"
     ]
+  },
+  {
+    "name": "Cross-Embedding Poisoning",
+    "vector": "Manipulate vector embeddings to pull legitimate content closer to malicious embeddings",
+    "targets": [
+      "RAG systems",
+      "Vector databases",
+      "Embedding-based retrieval"
+    ],
+    "defense": [
+      "Embedding space monitoring",
+      "Anomaly detection in vector clusters",
+      "Embedding integrity verification"
+    ]
+  },
+  {
+    "name": "Index Skew Attacks",
+    "vector": "Manipulate vector indices to bias nearest neighbor retrievals toward malicious content",
+    "targets": [
+      "Vector databases",
+      "Similarity search systems",
+      "HNSW/IVF indices"
+    ],
+    "defense": [
+      "Index integrity checks",
+      "Multiple index validation",
+      "Retrieval result auditing"
+    ]
+  },
+  {
+    "name": "Context Packing Attacks",
+    "vector": "Inflate retrieved content to cause context window overflows and truncate safety instructions",
+    "targets": [
+      "RAG-enabled LLMs",
+      "Context-aware agents",
+      "Document retrieval systems"
+    ],
+    "defense": [
+      "Content size limits in vector stores",
+      "Smart truncation strategies",
+      "Priority-based context management"
+    ]
+  },
+  {
+    "name": "Zero-Shot Vector Beaconing",
+    "vector": "Embed latent activation patterns in vectors that signal specific behaviors without explicit instructions",
+    "targets": [
+      "Foundation models",
+      "Embedding-based systems",
+      "Pattern recognition systems"
+    ],
+    "defense": [
+      "Embedding pattern analysis",
+      "Behavioral anomaly detection",
+      "Input sanitization"
+    ]
+  },
+  {
+    "name": "Embedding Feedback Loops",
+    "vector": "Poison embeddings re-ingested for continual learning to bias future outputs",
+    "targets": [
+      "Continual learning systems",
+      "Adaptive RAG",
+      "Training pipelines"
+    ],
+    "defense": [
+      "Training data validation",
+      "Feedback loop monitoring",
+      "Bias detection in model updates"
+    ]
   }
 ]

@@ -220,6 +220,91 @@ This catalog outlines emerging attack techniques exploiting autonomous AI agents
 
 ---
 
+## 15. 🎯 Cross-Embedding Poisoning
+**Concept**: Manipulate vector embeddings to pull legitimate content closer to malicious embeddings, increasing retrieval likelihood.
+
+**Mechanism**:
+- Inject adversarial embeddings near legitimate content vectors
+- Use gradient-based attacks to shift embedding space
+- Exploit cosine similarity thresholds in RAG systems
+
+**Targets**: RAG systems, vector databases, embedding-based retrieval
+
+**Defense**:
+- Embedding space monitoring
+- Anomaly detection in vector clusters
+- Embedding integrity verification
+
+---
+
+## 16. 📊 Index Skew Attacks
+**Concept**: Manipulate vector indices to bias nearest neighbor retrievals toward malicious content.
+
+**Mechanism**:
+- Corrupt index structures (HNSW, IVF)
+- Bias clustering algorithms during index building
+- Exploit approximate nearest neighbor weaknesses
+
+**Targets**: Vector databases, similarity search systems
+
+**Defense**:
+- Index integrity checks
+- Multiple index validation
+- Retrieval result auditing
+
+---
+
+## 17. 📦 Context Packing Attacks
+**Concept**: Inflate retrieved content to cause context window overflows, forcing truncation of safety instructions.
+
+**Mechanism**:
+- Embed oversized content in vector stores
+- Trigger retrieval of multiple large documents
+- Force context window saturation
+
+**Targets**: RAG-enabled LLMs, context-aware agents
+
+**Defense**:
+- Content size limits in vector stores
+- Smart truncation strategies
+- Priority-based context management
+
+---
+
+## 18. 📡 Zero-Shot Vector Beaconing
+**Concept**: Embed latent activation patterns in vectors that signal specific behaviors to LLMs without explicit instructions.
+
+**Mechanism**:
+- Train steganographic patterns in embeddings
+- Use adversarial examples as activation triggers
+- Exploit LLM's pattern recognition for covert signaling
+
+**Targets**: Foundation models, embedding-based systems
+
+**Defense**:
+- Embedding pattern analysis
+- Behavioral anomaly detection
+- Input sanitization
+
+---
+
+## 19. 🔄 Embedding Feedback Loops
+**Concept**: Poison embeddings that are re-ingested for continual learning to bias future outputs.
+
+**Mechanism**:
+- Inject malicious content into training pipelines
+- Exploit continuous learning systems
+- Create self-reinforcing bias patterns
+
+**Targets**: Continual learning systems, adaptive RAG
+
+**Defense**:
+- Training data validation
+- Feedback loop monitoring
+- Bias detection in model updates
+
+---
+
 ## Usage
 
 Use this catalog to:
