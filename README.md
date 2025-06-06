@@ -94,12 +94,10 @@ The attack vectors marked with ⭐ represent novel concepts primarily developed 
 - **Recursive Leakage**: [Lost in the Middle: How Language Models Use Long Contexts](https://arxiv.org/abs/2307.03172)
 - **Heuristic Drift Injection**: [Poisoning Web-Scale Training Data is Practical](https://arxiv.org/abs/2302.10149)
 - **Tool Confusion Attack**: [LLM-as-a-judge](https://arxiv.org/abs/2306.05685)
-- **Token Gaslighting**: [RAG vs Fine-tuning: Pipelines, Tradeoffs, and a Case Study on Agriculture](https://www.relari.ai/blog/rag-vs-fine-tuning-pipelines-tradeoffs-and-a-case-study-on-agriculture)
+- **Token Gaslighting**: [RAG vs Fine-tuning: Pipelines, Tradeoffs, and a Case Study on Agriculture](https://arxiv.org/abs/2401.08406)
 - **Function Flooding**: [Denial-of-Service Attack on Test-Time-Tuning Models](https://arxiv.org/abs/2405.02324)
-- **Subprompt Extraction**: [Prompt-Hacking: An Attack on NLP-based Applications](https://medium.com/@pregat.s/prompt-hacking-an-attack-on-nlp-based-applications-373167584f1b)
 - **Hidden File Exploitation**: [OWASP Top 10 for Large Language Model Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
 - **Backdoor Planning**: [Backdoor Attacks on Language Models](https://arxiv.org/abs/2311.09403)
 - **Nested Function Call Hijack**: [OWASP Top 10 for Large Language Model Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
-- **Semantic DoS**: [The Rise of AI-Powered Denial-of-Service Attacks and How to Mitigate Them](https://www.linkedin.com/pulse/rise-ai-powered-denial-of-service-attacks-how-mitigate-paul-fawkes-s5lrf)
 
 ### Sponsored by [ThirdKey](https://thirdkey.ai)
